@@ -1,24 +1,26 @@
-## Spoons
+# Spoons
 
-### AppBindings.spoon
+## AppBindings.spoon
 
 This spoon allows you to easily set custom app-specific key bindings.
 
 Just provide the app name as seen in the menubar and a mapping from and to new keyboard shortcut.
 
-#### Installation
+### Installation
 
-**Download:** AppBindings.zip
+**Download:** [AppBindings.zip](Spoons/AppBindings.spoon.zip)
 
-**Open:** `AppBindings.spoon`
+**Open:** Unzip and open `AppBindings.spoon`. It should auto-install the spoon.
 
 **Configure:** Add to your `init.lua`
 
-Usage: Replace `App Name` and variables below.
-
 ```lua
 hs.loadSpoon("AppBindings")
+```
 
+**Usage**: Replace `App Name` and key maps below.
+
+```lua
 spoon.AppBindings:bind('App Name', {
 --  |----FROM----| |------TO------|
 --  |meta  ,  key| |meta   ,  key |
@@ -52,4 +54,4 @@ spoon.AppBindings:bind('Slack', {
 })
 ```
 
-Reload configuration
+Don't forget to save and reload Hammerspoon configuration.
